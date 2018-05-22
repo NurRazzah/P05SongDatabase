@@ -31,8 +31,8 @@ import java.util.ArrayList;
             db.close();
 
             aa = new ArrayAdapter<String>(ShowList.this,
-                    android.R.layout.simple_list_item_1, al);
-            
+                    android.R.layout.row, al);
+
             lv.setAdapter(aa);
 
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
