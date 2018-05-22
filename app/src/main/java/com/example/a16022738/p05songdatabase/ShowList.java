@@ -30,8 +30,9 @@ import java.util.ArrayList;
             al = db.getAllSongs();
             db.close();
 
-            aa = new ArrayAdapter<String>(ShowList.this, al);
-            aa.setNotifyOnChange(true);
+            aa = new ArrayAdapter<String>(ShowList.this,
+                    android.R.layout.simple_list_item_1, al);
+            
             lv.setAdapter(aa);
 
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
